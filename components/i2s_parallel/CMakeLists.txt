@@ -1,0 +1,4 @@
+set(COMPONENT_SRCS i2s_parallel.c)
+set(COMPONENT_ADD_INCLUDEDIRS include)
+
+idf_component_register(INCLUDE_DIRS ${COMPONENT_ADD_INCLUDEDIRS} SRCS ${COMPONENT_SRCS} REQUIRES driver soc)
